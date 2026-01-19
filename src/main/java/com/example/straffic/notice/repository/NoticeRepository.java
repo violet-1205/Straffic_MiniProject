@@ -20,9 +20,12 @@ public interface NoticeRepository extends JpaRepository<NoticeEntity, Long> {
             """)
     Page<NoticeEntity> search(String q, String tag, Pageable pageable);
 
-    // 최신 공지 3개 조회 (상단 고정 무시, 작성일 내림차순)
     List<NoticeEntity> findTop3ByOrderByCreatedAtDesc();
 
     void deleteByAuthor(MemberEntity author);
+
+    NoticeEntity findFirstByIdGreaterThanOrderByIdAsc(Long id);
+
+    NoticeEntity findFirstByIdLessThanOrderByIdDesc(Long id);
 }
 

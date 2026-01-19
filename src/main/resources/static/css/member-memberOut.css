@@ -1,10 +1,14 @@
 .member-list-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1130px;
+    width: 100%;
+    margin: 8px auto;
     background: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 10px 24px;
+    border-radius: 0;
+    min-height: 750px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-sizing: border-box;
 }
 
 .member-layout {
@@ -79,7 +83,10 @@
 
 @media (max-width: 768px) {
     .member-list-container {
-        padding: 16px;
+        padding: 24px 16px;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
     }
 
     .member-layout {

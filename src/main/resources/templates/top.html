@@ -23,7 +23,7 @@
 
             <!-- Authenticated -->
             <li sec:authorize="isAuthenticated()">
-                <a href="/mypage" class="nav-link" th:classappend="${#authorization.expression('hasRole(''ROLE_ADMIN'')')} ? 'admin-login-box'">
+                <a href="/mypage" class="nav-link">
                     <img th:src="@{/member/profile-image}"
                          alt="프로필"
                          style="width:28px; height:28px; border-radius:50%; object-fit:cover; display:block; margin-right:8px;"

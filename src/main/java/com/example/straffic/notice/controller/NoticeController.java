@@ -36,6 +36,10 @@ public class NoticeController {
     public String view(@PathVariable Long id, Model model) {
         NoticeEntity notice = noticeService.findAndIncreaseViews(id);
         model.addAttribute("notice", notice);
+        NoticeEntity previous = noticeService.getPrevious(id);
+        NoticeEntity next = noticeService.getNext(id);
+        model.addAttribute("previousNotice", previous);
+        model.addAttribute("nextNotice", next);
         return "notice/detail";
     }
 

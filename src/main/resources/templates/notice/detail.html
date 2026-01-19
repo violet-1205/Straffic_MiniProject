@@ -14,16 +14,20 @@
     <div class="noticeView">
         <h3 th:text="${notice.title}">제목</h3>
         <div class="noticeInfo">
-            <dl class="cate">
-                <dt class="acchidden">카테고리</dt>
-                <dd th:text="${notice.tag}">[공지]</dd>
+            <dl>
+                <dt>작성자</dt>
+                <dd th:text="${notice.author != null ? notice.author.name : '관리자'}">관리자</dd>
             </dl>
-            <dl class="date">
-                <dt class="acchidden">등록일</dt>
-                <dd th:text="${#temporals.format(notice.createdAt, 'yyyy-MM-dd')}">2026-01-01</dd>
+            <dl>
+                <dt>카테고리</dt>
+                <dd th:text="${notice.tag}">공지</dd>
             </dl>
-            <dl class="count">
-                <dt class="acchidden">조회수</dt>
+            <dl>
+                <dt>등록일</dt>
+                <dd th:text="${#temporals.format(notice.createdAt, 'yyyy-MM-dd HH:mm')}">2026-01-01 10:00</dd>
+            </dl>
+            <dl>
+                <dt>조회수</dt>
                 <dd th:text="${notice.views}">0</dd>
             </dl>
         </div>
@@ -40,6 +44,23 @@
                 <form th:action="@{/notice/admin/delete/{id}(id=${notice.id})}" method="post" style="display:inline;">
                     <button type="submit" class="btDelete" onclick="return confirm('정말로 삭제하시겠습니까?')">삭제</button>
                 </form>
+            </div>
+        </div>
+
+        <div class="post-nav">
+            <div class="post-nav-item">
+                <span class="post-nav-label">이전 글</span>
+                <a th:if="${previousNotice != null}"
+                   th:href="@{/notice/view/{id}(id=${previousNotice.id})}"
+                   th:text="${previousNotice.title}">이전 글 제목</a>
+                <span class="post-nav-empty" th:if="${previousNotice == null}">이전 글이 없습니다.</span>
+            </div>
+            <div class="post-nav-item">
+                <span class="post-nav-label">다음 글</span>
+                <a th:if="${nextNotice != null}"
+                   th:href="@{/notice/view/{id}(id=${nextNotice.id})}"
+                   th:text="${nextNotice.title}">다음 글 제목</a>
+                <span class="post-nav-empty" th:if="${nextNotice == null}">다음 글이 없습니다.</span>
             </div>
         </div>
     </div>

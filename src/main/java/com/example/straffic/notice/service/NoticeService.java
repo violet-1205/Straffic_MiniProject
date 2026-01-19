@@ -15,4 +15,6 @@ public interface NoticeService {
     byte[] getImageData(Long noticeId);
     NoticeEntity get(Long id);
     List<NoticeEntity> getRecentNotices();
+    NoticeEntity getPrevious(Long id);
+    NoticeEntity getNext(Long id);
 }

@@ -28,11 +28,11 @@
 
 .notice-tools { display: flex; gap: 10px; margin: 14px 0 18px; }
 .notice-tools form { display: flex; gap: 8px; }
-.notice-tools select { width: 100px; padding: 8px 10px; border: 1px solid #ddd; border-radius: 6px; }
-.notice-tools input { width: 300px; padding: 8px 10px; border: 1px solid #ddd; border-radius: 6px; }
+.notice-tools select { width: 100px; padding: 8px 10px; border: 1px solid #ddd; border-radius: 0; }
+.notice-tools input { width: 300px; padding: 8px 10px; border: 1px solid #ddd; border-radius: 0; }
 
 /* 게시판 쓰기/검색 버튼을 브랜드 블루 계열로 통일 */
-.btn-write, .btn-search { padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; border: none; cursor: pointer; }
+.btn-write, .btn-search { padding: 8px 16px; border-radius: 0; text-decoration: none; font-size: 0.9rem; border: none; cursor: pointer; }
 .btn-write { background: var(--primary-color); color: #fff; }
 .btn-write:hover { background: var(--primary-hover); }
 .btn-write:active { background: #003f9e; }
@@ -43,9 +43,9 @@
 .btn-search:disabled, .btn-search[disabled] { background: #d9e6ff; color: #8ea4c7; cursor: not-allowed; }
 
 .pagination { margin-top: 30px; display: flex; justify-content: center; gap: 5px; }
-.pagination a, .pagination span { min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); border-radius: 4px; background: #fff; color: var(--text-light); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+.pagination a, .pagination span { min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-color); border-radius: 0; background: #fff; color: var(--text-light); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
 .pagination a:hover { background-color: #e5f0ff; color: var(--primary-color); border-color: var(--primary-color); }
-.pagination strong { min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--primary-color); color: #fff; border: 1px solid var(--primary-color); border-radius: 4px; font-weight: 600; }
+.pagination strong { min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--primary-color); color: #fff; border: 1px solid var(--primary-color); border-radius: 0; font-weight: 600; }
 .pagination .paginationNum { display: flex; gap: 5px; }
 
 .pinnedTag { color: var(--primary-color); font-weight: 700; margin-right: 4px; }

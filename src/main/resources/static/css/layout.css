@@ -117,7 +117,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 150px 20px 40px;
+    padding: 75px 20px 20px; /* Adjusted top padding to 75px */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -128,7 +128,7 @@ ul {
 .layout-footer {
     background: linear-gradient(135deg, #00336b, var(--accent-black));
     color: #c7d8ff;
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     margin-top: auto;
     font-size: 14px;
@@ -284,6 +284,19 @@ ul {
     white-space: nowrap;
     font-size: 14px; /* Slightly smaller font */
     text-decoration: none; /* Ensure no underline */
+    height: 40px; /* Force consistent height for all nav items */
+}
+
+/* 왼쪽 끝 아이템 (M-MaaS 로고)의 왼쪽 패딩 제거 및 시각적 보정을 위한 음수 마진 적용 */
+.nav-links .nav-item:first-child .nav-link {
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+/* 오른쪽 끝 아이템 (로그인/로그아웃)의 오른쪽 패딩 제거 및 시각적 보정을 위한 음수 마진 적용 */
+.nav-right li:last-child .nav-link {
+    padding-right: 0;
+    margin-right: 20px;
 }
 
 .nav-link:hover, .nav-item.dropdown:hover > .nav-link {
@@ -294,6 +307,7 @@ ul {
 .nav-link .material-symbols-outlined {
     font-size: 20px;
     color: #ffffff; /* White Icons */
+    line-height: 1; /* Prevent line-height from affecting height */
 }
 
 /* Dropdown Menu */
@@ -410,7 +424,7 @@ img {
 
 @media (max-width: 768px) {
     .layout-content {
-        padding: 130px 12px 30px;
+        padding: 90px 12px 30px;
     }
 
     .navbar-container {
@@ -547,3 +561,5 @@ img {
         font-size: 13px;
     }
 }
+
+

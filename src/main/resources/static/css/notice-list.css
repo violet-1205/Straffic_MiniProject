@@ -24,7 +24,7 @@
     padding: 8px 10px;
     /* 공지 검색 영역의 진한 테두리를 제거하고 부드러운 인풋으로 */
     border: 1px solid transparent;
-    border-radius: 6px;
+    border-radius: 0;
     background: #f7f9ff;
 }
 
@@ -49,7 +49,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid var(--border-color); 
-    border-radius: 4px; 
+    border-radius: 0; 
     background: #fff; 
     color: var(--text-light); 
     text-decoration: none; 
@@ -70,7 +70,7 @@
     background: var(--primary-color); 
     color: #fff; 
     border: 1px solid var(--primary-color); 
-    border-radius: 4px; 
+    border-radius: 0; 
     font-weight: 600;
 }
 .pagination .paginationNum {
@@ -79,7 +79,7 @@
 }
 
 .notice-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-.btn-write { padding: 8px 14px; background: var(--primary-color); color: #fff; border-radius: 6px; text-decoration: none; border: 1px solid transparent; }
+.btn-write { padding: 8px 14px; background: var(--primary-color); color: #fff; border-radius: 0; text-decoration: none; border: 1px solid transparent; }
 .btn-write:hover { background: var(--primary-hover); }
 .btn-write:active { background: #003f9e; }
 .btn-write:disabled, .btn-write[disabled] { background: #d9e6ff; color: #8ea4c7; cursor: not-allowed; }
@@ -98,8 +98,8 @@
 
     .notice-tools { flex-direction: column; gap: 10px; }
     .notice-tools form { display: flex; gap: 8px; width: 100%; }
-    .notice-tools select { width: 100px; padding: 8px 10px; border: 1px solid transparent; border-radius: 6px; background: #f7f9ff; }
-    .notice-tools input { flex: 1; width: auto; padding: 8px 10px; border: 1px solid transparent; border-radius: 6px; background: #f7f9ff; }
+    .notice-tools select { width: 100px; padding: 8px 10px; border: 1px solid transparent; border-radius: 0; background: #f7f9ff; }
+    .notice-tools input { flex: 1; width: auto; padding: 8px 10px; border: 1px solid transparent; border-radius: 0; background: #f7f9ff; }
     .btn-write { width: 100%; text-align: center; box-sizing: border-box; }
 
     .noticeList table { display: block; border: 0; }

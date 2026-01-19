@@ -7,7 +7,9 @@
     align-items: center;
     width: 100%;
     padding: 20px;
-    min-height: 70vh; /* Ensure vertical centering on screen */
+    min-height: 80vh; /* Ensure vertical centering on screen */
+    margin-top: 0;
+    padding-bottom: 50px; /* Visually balance center */
 }
 
 .login-card {
@@ -16,7 +18,7 @@
     max-width: 400px; /* Slightly narrower */
     padding: 20px; /* Further reduced padding */
     background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
+    border-radius: 0;
     box-shadow: 0 15px 45px rgba(0,0,0,0.1);
 }
 
@@ -36,7 +38,7 @@
     font-size: 14px;
     background: #fdedec;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .alert-info {
@@ -46,7 +48,7 @@
     font-size: 14px;
     background: #ebf5fb;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .login-form {
@@ -64,7 +66,7 @@
     padding: 12px 14px; /* Reduced padding */
     font-size: 15px;
     border: 1px solid #ddd;
-    border-radius: 4px; /* Slightly rounded or square based on image */
+    border-radius: 0;
     background-color: #fff;
     transition: all 0.3s ease;
     outline: none;
@@ -241,7 +243,7 @@
 .social-btn {
     width: 45px; /* Slightly larger for better visibility */
     height: 45px;
-    border-radius: 50%;
+    border-radius: 0;
     display: flex;
     justify-content: center;
     align-items: center;

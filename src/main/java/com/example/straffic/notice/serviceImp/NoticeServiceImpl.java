@@ -119,4 +119,16 @@ public class NoticeServiceImpl implements NoticeService {
             return Collections.emptyList();
         }
     }
+
+    @Override
+    @Transactional(readOnly = true)
+    public NoticeEntity getPrevious(Long id) {
+        return noticeRepository.findFirstByIdGreaterThanOrderByIdAsc(id);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public NoticeEntity getNext(Long id) {
+        return noticeRepository.findFirstByIdLessThanOrderByIdDesc(id);
+    }
 }

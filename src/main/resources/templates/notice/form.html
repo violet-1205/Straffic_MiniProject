@@ -10,8 +10,8 @@
 
 <body>
 <div layout:fragment="content">
-
-    <div class="notice-form-wrapper" sec:authorize="hasRole('ADMIN')">
+    <div class="layout-content">
+        <div class="notice-form-wrapper" sec:authorize="hasRole('ADMIN')">
             <h1 th:text="${mode == 'edit'} ? '공지 수정' : '공지 등록'">공지 등록</h1>
 
             <form th:if="${mode == 'create'}"
@@ -85,6 +85,7 @@
                     <a th:href="@{/notice/view/{id}(id=${notice.id})}" class="btn-secondary">취소</a>
                 </div>
             </form>
+    </div>
     </div>
 </div>
 </body>
