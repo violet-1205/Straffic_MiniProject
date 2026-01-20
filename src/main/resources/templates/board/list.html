@@ -23,7 +23,7 @@
                     <option value="author" th:selected="${type == 'author'}">작성자</option>
                 </select>
                 <input type="text" name="q" th:value="${q}" placeholder="검색어를 입력하세요.">
-                <button type="submit" class="btn-search">검색</button>
+                <button type="submit" class="btn-write" style="padding:8px 14px;">검색</button>
             </form>
             <a class="btn-write" th:href="@{/board/write}" sec:authorize="isAuthenticated()">글쓰기</a>
         </div>
