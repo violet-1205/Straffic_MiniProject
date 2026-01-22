@@ -92,21 +92,21 @@ public class DataSeeder implements CommandLineRunner {
             entities.add(entity);
         }
 
-        // 2. 이번 주 데이터 (2026-01-19 ~ 2026-01-25)
-        // 월요일 (50개)
-        addDailyData(entities, LocalDate.of(2026, 1, 19), 50);
-        // 화요일 (80개)
-        addDailyData(entities, LocalDate.of(2026, 1, 20), 80);
-        // 수요일 (120개)
-        addDailyData(entities, LocalDate.of(2026, 1, 21), 120);
-        // 목요일 (오늘, 180개)
-        addDailyData(entities, LocalDate.of(2026, 1, 22), 180);
-        // 금요일 (250개)
-        addDailyData(entities, LocalDate.of(2026, 1, 23), 250);
-        // 토요일 (350개)
-        addDailyData(entities, LocalDate.of(2026, 1, 24), 350);
-        // 일요일 (500개)
-        addDailyData(entities, LocalDate.of(2026, 1, 25), 500);
+        // 2. 이번 주 데이터 (2026-01-19 ~ 2026-01-25) - 수량 평균 수준으로 조정
+        // 월요일 (15개)
+        addDailyData(entities, LocalDate.of(2026, 1, 19), 15);
+        // 화요일 (20개)
+        addDailyData(entities, LocalDate.of(2026, 1, 20), 20);
+        // 수요일 (25개)
+        addDailyData(entities, LocalDate.of(2026, 1, 21), 25);
+        // 목요일 (오늘, 30개)
+        addDailyData(entities, LocalDate.of(2026, 1, 22), 30);
+        // 금요일 (35개)
+        addDailyData(entities, LocalDate.of(2026, 1, 23), 35);
+        // 토요일 (45개)
+        addDailyData(entities, LocalDate.of(2026, 1, 24), 45);
+        // 일요일 (55개)
+        addDailyData(entities, LocalDate.of(2026, 1, 25), 55);
 
         // 일괄 저장
         pageViewHistoryRepository.saveAll(entities);
