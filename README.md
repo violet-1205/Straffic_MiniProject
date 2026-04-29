@@ -143,11 +143,11 @@ http://localhost:1111
 
 | 이름 | 담당 기능 |
 |------|-----------|
-| violet-1205 | 팀장, 구조 설계 |
+| violet-1205 | 팀장, 로그인,구조 설계,공지사항 |
 | goatwxy-ctrl | 주차 대시보드, 대시보드 UI |
-| dhkdrns2-crypto | 모바일 레이아웃, OCR SSL 연동 |
+| dhkdrns2-crypto | 모바일 레이아웃, OCR SSL 연동,게시판, 공지사항, CSS |
 | seonmin7117-lang | Spring Security, 소셜 로그인, CSS 테마 |
-| jae1205 / manyang | 게시판, 공지사항, CSS |
+
 | rhlfur2055 /  | api, ocr|
 <br>
 ## ⚠️ 보안 안내
