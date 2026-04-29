@@ -10,7 +10,7 @@
 |------|------|
 | 프로젝트명 | Straffic (Smart Traffic) |
 | 개발 기간 | 2026.01 ~ 2026.01 (약 3주) |
-| 개발 인원 | 5명 (팀 프로젝트) |
+| 개발 인원 | 6명 (팀 프로젝트) |
 | 개발 유형 | Spring Boot 기반 풀스택 웹 애플리케이션 |
 
 <br>
@@ -32,6 +32,9 @@
 ### Database & Infra
 ![Oracle](https://img.shields.io/badge/Oracle_XE-F80000?style=flat-square&logo=oracle&logoColor=white)
 ![Python](https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![EasyOCR](https://img.shields.io/badge/EasyOCR-FF6F00?style=flat-square&logo=python&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat-square&logo=yolo&logoColor=black)
 
 ### External APIs
 - **ODsay API** — 대중교통 길찾기
@@ -55,9 +58,9 @@
                
                 - ### 🚗 차량 번호판 인식 (AI · OCR)
                 - - **YOLOv8** 기반 차량 번호판 영역 탐지
-                  - - **EasyOCR** / Tesseract를 활용한 번호판 문자 인식
-                    - - Python Flask OCR 서버 ↔ Spring Boot 간 **REST API 연동**
-                      -   - Spring Boot → `POST /ocr` 요청 → Python 서버에서 이미지 처리 → 번호판 텍스트 반환
+                  - - **EasyOCR**을 활용한 번호판 문자 인식
+                    - - Python **Flask** OCR 서버 ↔ Spring Boot 간 **REST API 연동**
+                      -   - Spring Boot → `POST /ocr` 요청 → Python Flask 서버에서 이미지 처리 → 번호판 텍스트 반환
                           - - 인식 결과를 DB에 저장하고 이력 조회 가능
                             - - 웹 UI에서 이미지 업로드 시 실시간 번호판 인식 결과 표시
                              
@@ -90,7 +93,7 @@
                                         │       └── resources/
                                         │           ├── templates/     # Thymeleaf 템플릿
                                         │           └── static/        # CSS, JS, 이미지
-                                        ├── ocr-service/               # Python YOLOv8 + OCR 서버 (Flask)
+                                        ├── ocr-service/               # Python YOLOv8 + EasyOCR + Flask 서버
                                         └── build.gradle
                                         ```
 
@@ -157,7 +160,8 @@
 
                                               | 이름 | 담당 기능 |
                                               |------|-----------|
-                                              | violet-1205 | 팀장, 차량 번호판 인식(YOLOv8 + OCR), Python-Spring Boot REST API 연동, 전체 구조 설계 |
+                                              | violet-1205 | 팀장, 차량 번호판 인식(YOLOv8), 전체 구조 설계 |
+                                              | rhlfur2055-prog | 번호판 인식 EasyOCR 구현, 외부 API 연동 (ODsay, TMap, 서울시 열린데이터) |
                                               | goatwxy-ctrl | 주차 대시보드, 대시보드 UI |
                                               | dhkdrns2-crypto | 모바일 레이아웃, OCR SSL 연동 |
                                               | seonmin7117-lang | Spring Security, 소셜 로그인, CSS 테마 |
@@ -170,4 +174,4 @@
                                               - - DB 접속 정보 및 API 키는 절대 커밋하지 마세요.
                                                
                                                 - ---
-                                                *Straffic_MiniProject · 5인 팀 프로젝트 · 2026.01*
+                                                *Straffic_MiniProject · 6인 팀 프로젝트 · 2026.01*
