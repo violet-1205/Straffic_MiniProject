@@ -57,9 +57,6 @@
 - YOLOv8 기반 차량 번호판 탐지
 - Python OCR 서비스와 Spring Boot 간 REST 연동
 
-### 🛴 공유 모빌리티
-- 따릉이 · 킥보드 등 공유 모빌리티 위치 조회
-
 ### 👤 회원 / 보안
 - Spring Security 기반 폼 로그인
 - Google · Naver · Kakao OAuth2 소셜 로그인
