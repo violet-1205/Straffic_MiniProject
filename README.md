@@ -138,17 +138,30 @@ python app.py
 ```
 http://localhost:1111
 ```
+
+## 🔑 사용 API 목록
+
+| API | 용도 | 발급처 |
+|-----|------|--------|
+| Google OAuth2 | 구글 소셜 로그인 | Google Cloud Console |
+| Naver OAuth2 | 네이버 소셜 로그인 | Naver Developers |
+| Kakao OAuth2 | 카카오 소셜 로그인 | Kakao Developers |
+| Kakao Maps API | 지도 렌더링 및 마커 표시 | Kakao Developers |
+| ODsay API | 대중교통 길찾기 경로 탐색 | ODsay Lab |
+| TMap API | 지도 렌더링 및 경로 탐색 | SKT TMap Developers |
+| 서울시 열린데이터광장 API | 지하철 실시간 도착 정보 | 서울 열린데이터광장 |
+
 <br>
 ## 👥 팀원 역할
 
 | 이름 | 담당 기능 |
 |------|-----------|
-| violet-1205 | 팀장, 로그인,구조 설계,공지사항 |
+| violet-1205 | 팀장, 차량 번호판 인식(YOLOv8), 공유 모빌리티, 전체 구조 설계 |
 | goatwxy-ctrl | 주차 대시보드, 대시보드 UI |
-| dhkdrns2-crypto | 모바일 레이아웃, OCR SSL 연동,게시판, 공지사항, CSS |
+| dhkdrns2-crypto | 모바일 레이아웃, OCR SSL 연동 |
 | seonmin7117-lang | Spring Security, 소셜 로그인, CSS 테마 |
-
-| rhlfur2055 /  | api, ocr|
+| jae1205 / manyang | 게시판, 공지사항, CSS |
+| rhlfur2055 | api, ocr |
 <br>
 ## ⚠️ 보안 안내
 - `application-secret.properties` 파일은 `.gitignore`에 의해 버전 관리에서 제외됩니다.
