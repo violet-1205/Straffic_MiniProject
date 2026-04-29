@@ -75,103 +75,20 @@
 
 <br>
 
-##   
-
-```
-Straffic_MiniProject/
- src/
-     main/
-             java/com/example/straffic/
-                        board/         # 
-                                   config/        # Spring  (Security, WebFlux )
-                                              dashboard/     #  
-                                                         member/        #  
-                                                                    notice/        # 
-                                                                               oauth/         #  
-                                                                                          parking/       #  
-                                                                                                     security/      #  
-                                                                                                             resources/
-                                                                                                                         templates/     # Thymeleaf 
-                                                                                                                                     static/        # CSS, JS, 
-                                                                                                                                      ocr-service/               # Python YOLOv8 + EasyOCR + Flask 
-                                                                                                                                       build.gradle
-                                                                                                                                       ```
-                                                                                                                                       
-                                                                                                                                       <br>
-                                                                                                                                       
-                                                                                                                                       ##    
-                                                                                                                                       
-                                                                                                                                       ###  
-                                                                                                                                       - Java 17+
-                                                                                                                                       - Oracle Database XE
-                                                                                                                                       - Python 3.8+ (OCR   )
-                                                                                                                                       
-                                                                                                                                       ### 1.  
-                                                                                                                                       ```bash
-                                                                                                                                       git clone https://github.com/violet-1205/Straffic_MiniProject.git
-                                                                                                                                       cd Straffic_MiniProject
-                                                                                                                                       ```
-                                                                                                                                       
-                                                                                                                                       ### 2.    
-                                                                                                                                       `src/main/resources/application-secret.properties`      .
-                                                                                                                                       
-                                                                                                                                       ```properties
-                                                                                                                                       # Database
-                                                                                                                                       spring.datasource.username=YOUR_DB_USER
-                                                                                                                                       spring.datasource.password=YOUR_DB_PASSWORD
-                                                                                                                                       
-                                                                                                                                       # API Keys
-                                                                                                                                       api.odsay.key=YOUR_ODSAY_KEY
-                                                                                                                                       api.tmap.key=YOUR_TMAP_KEY
-                                                                                                                                       api.kakao.key=YOUR_KAKAO_REST_KEY
-                                                                                                                                       api.kakao.js-key=YOUR_KAKAO_JS_KEY
-                                                                                                                                       kakao.js.key=YOUR_KAKAO_JS_KEY
-                                                                                                                                       api.seoul.key=YOUR_SEOUL_API_KEY
-                                                                                                                                       
-                                                                                                                                       # OAuth2
-                                                                                                                                       spring.security.oauth2.client.registration.google.client-id=YOUR_GOOGLE_ID
-                                                                                                                                       spring.security.oauth2.client.registration.google.client-secret=YOUR_GOOGLE_SECRET
-                                                                                                                                       spring.security.oauth2.client.registration.naver.client-id=YOUR_NAVER_ID
-                                                                                                                                       spring.security.oauth2.client.registration.naver.client-secret=YOUR_NAVER_SECRET
-                                                                                                                                       spring.security.oauth2.client.registration.kakao.client-id=YOUR_KAKAO_ID
-                                                                                                                                       spring.security.oauth2.client.registration.kakao.client-secret=YOUR_KAKAO_SECRET
-                                                                                                                                       ```
-                                                                                                                                       
-                                                                                                                                       ### 3. Spring Boot 
-                                                                                                                                       ```bash
-                                                                                                                                       ./gradlew bootRun
-                                                                                                                                       ```
-                                                                                                                                       
-                                                                                                                                       ### 4. OCR   ()
-                                                                                                                                       ```bash
-                                                                                                                                       cd ocr-service
-                                                                                                                                       pip install -r requirements.txt
-                                                                                                                                       python app.py
-                                                                                                                                       ```
-                                                                                                                                       
-                                                                                                                                       ### 5. 
-                                                                                                                                       ```
-                                                                                                                                       http://localhost:1111
-                                                                                                                                       ```
-                                                                                                                                       
-                                                                                                                                       <br>
-                                                                                                                                       
-                                                                                                                                       ##   
-                                                                                                                                       
-                                                                                                                                       |  |   |
-                                                                                                                                       |------|-----------|
-                                                                                                                                       | violet-1205 | ,   (YOLOv8),    |
-                                                                                                                                       | rhlfur2055-prog |   EasyOCR ,  API  (ODsay, TMap,  ) |
-                                                                                                                                       | goatwxy-ctrl |  ,  UI |
-                                                                                                                                       | dhkdrns2-crypto |  , OCR SSL  |
-                                                                                                                                       | seonmin7117-lang | Spring Security,  , CSS  |
-                                                                                                                                       | jae1205 / manyang | , , CSS |
-                                                                                                                                       
-                                                                                                                                       <br>
-                                                                                                                                       
-                                                                                                                                       ##   
-                                                                                                                                       - `application-secret.properties`  `.gitignore`    .
-                                                                                                                                       - DB    API    .
-                                                                                                                                       
-                                                                                                                                       ---
-                                                                                                                                       *Straffic_MiniProject  6    2026.01*
+| 이름 | 담당 기능 |
+|------|-----------|
+| violet-1205 | 팀장, 차량 번호판 인식(YOLOv8), 공유 모빌리티, 전체 구조 설계 |
+| goatwxy-ctrl | 주차 대시보드, 대시보드 UI |
+| dhkdrns2-crypto | 모바일 레이아웃, OCR SSL 연동 |
+| seonmin7117-lang | Spring Security, 소셜 로그인, CSS 테마 |
+| jae1205 / manyang | 게시판, 공지사항, CSS |
+| rhlfur2055 | api, ocr |
+<br>
+## ⚠️ 보안 안내
+- `application-secret.properties` 파일은 `.gitignore`에 의해 버전 관리에서 제외됩니다.
+- DB 접속 정보 및 API 키는 절대 커밋하지 마세요.
+<br>
+---
+<p align="center">
+  <sub>Straffic_MiniProject · 5인 팀 프로젝트 · 2026.01</sub>
+</p>
