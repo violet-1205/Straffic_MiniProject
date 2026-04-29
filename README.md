@@ -1,22 +1,15 @@
 # 🚦 Straffic — 스마트 교통 정보 플랫폼
-
 > 서울시 대중교통 · 공유 모빌리티 · 주차 정보를 한 곳에서 조회하고, AI 기반 차량 번호판 인식 기능을 제공하는 웹 애플리케이션입니다.
-
 <br>
-
 ## 📌 프로젝트 개요
-
 | 항목 | 내용 |
 |------|------|
 | 프로젝트명 | Straffic (Smart Traffic) |
 | 개발 기간 | 2026.01 ~ 2026.01 (약 3주) |
 | 개발 인원 | 5명 (팀 프로젝트) |
 | 개발 유형 | Spring Boot 기반 풀스택 웹 애플리케이션 |
-
 <br>
-
 ## 🛠 기술 스택
-
 ### Backend
 ![Java](https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.1-6DB33F?style=flat-square&logo=springboot&logoColor=white)
@@ -41,9 +34,7 @@
 - **Google / Naver / Kakao OAuth2** — 소셜 로그인
 
 <br>
-
-## ✨ 주요 기능
-
+## ✨ 주요 기
 ### 🗺 교통 정보
 - 지하철 · 버스 · 자전거 통합 길찾기 (ODsay, TMap 연동)
 - 서울시 지하철 실시간 도착 정보 조회
@@ -147,28 +138,22 @@ python app.py
 ```
 http://localhost:1111
 ```
-
 <br>
-
 ## 👥 팀원 역할
 
 | 이름 | 담당 기능 |
 |------|-----------|
-| violet-1205 | 팀장, 차량 번호판 인식(YOLOv8), 공유 모빌리티, 전체 구조 설계 |
+| violet-1205 | 팀장, 구조 설계 |
 | goatwxy-ctrl | 주차 대시보드, 대시보드 UI |
 | dhkdrns2-crypto | 모바일 레이아웃, OCR SSL 연동 |
 | seonmin7117-lang | Spring Security, 소셜 로그인, CSS 테마 |
 | jae1205 / manyang | 게시판, 공지사항, CSS |
-
+| rhlfur2055 /  | api, ocr|
 <br>
-
 ## ⚠️ 보안 안내
-
 - `application-secret.properties` 파일은 `.gitignore`에 의해 버전 관리에서 제외됩니다.
 - DB 접속 정보 및 API 키는 절대 커밋하지 마세요.
-
 <br>
-
 ---
 <p align="center">
   <sub>Straffic_MiniProject · 5인 팀 프로젝트 · 2026.01</sub>
