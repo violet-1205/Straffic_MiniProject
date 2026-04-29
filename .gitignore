@@ -1,4 +1,3 @@
-
 ### Secrets ###
 src/main/resources/application-secret.properties
 
@@ -10,3 +9,13 @@ bin/
 .idea/
 *.class
 *.iml
+
+### Runtime / Uploads ###
+uploads/
+
+### ML Models ###
+*.pt
+*.onnx
+
+### VS Code ###
+.vscode/
